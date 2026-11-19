@@ -336,7 +336,7 @@ export function LeadForm({ lang, source, courses, trialClasses, variant = "quick
       )}
 
       {/* Honeypot: hidden from people, tempting to bots */}
-      <div aria-hidden="true" className="hidden" tabIndex={-1} autoComplete="off">
+      <div aria-hidden="true" className="hidden">
         <label>
           Website
           <input name="website" tabIndex={-1} autoComplete="off" />
