@@ -84,9 +84,9 @@ Alongside these, many families add [Islamic studies for children](/courses/islam
 
 If you are starting from zero, read [what Noorani Qaida is and how long it takes](/blog/what-is-noorani-qaida). If you are deciding when a child should begin, see [the best age to start Quran classes](/blog/best-age-to-start-quran-classes).
 
-## One-to-one or a small group?
+## 1-on-1 or a small group?
 
-One-to-one gives the most correction time: the learner reads for nearly the whole class. A small group of two to six learners at the same level costs less for each family and suits siblings, cousins and friends who enjoy learning together. The rule that matters is the level. A group only works when everyone in it is at the same stage. See how [group Quran classes](/group-quran-classes) are arranged.
+1-on-1 gives the most correction time: the learner reads for nearly the whole class. A small group of two to six learners at the same level costs less for each family and suits siblings, cousins and friends who enjoy learning together. The rule that matters is the level. A group only works when everyone in it is at the same stage. See how [group Quran classes](/group-quran-classes) are arranged.
 
 ## How many classes a week
 
@@ -105,11 +105,11 @@ Short and regular beats long and occasional at every stage.
 
 ## How to choose a teacher
 
-Listen to the teacher recite, check their qualification, and make sure they can explain a mistake in words your child understands. Then confirm three practical things: the class is truly one-to-one (or a real small group), the same teacher takes every class, and you will receive progress reports. Our checklist covers all nine points: [how to choose an online Quran teacher](/blog/how-to-choose-online-quran-teacher).
+Listen to the teacher recite, check their qualification, and make sure they can explain a mistake in words your child understands. Then confirm three practical things: the class is truly 1-on-1 (or a real small group), the same teacher takes every class, and you will receive progress reports. Our checklist covers all nine points: [how to choose an online Quran teacher](/blog/how-to-choose-online-quran-teacher).
 
 ## What it costs
 
-Fees depend on how many classes you take each week, how long each class is and whether it is one-to-one or a group. We publish ours on the [fees page](/pricing), and we explain the going rates across the USA, UK and Australia in [how much online Quran classes cost](/blog/online-quran-classes-cost). Always compare academies by the price of one hour of teaching, not by the monthly figure.
+Fees depend on how many classes you take each week, how long each class is and whether it is 1-on-1 or a group. We publish ours on the [fees page](/pricing), and we explain the going rates across the USA, UK and Australia in [how much online Quran classes cost](/blog/online-quran-classes-cost). Always compare academies by the price of one hour of teaching, not by the monthly figure.
 
 ## How to tell whether it is working
 
@@ -147,7 +147,7 @@ Pick times you can keep every week. A fixed slot that never moves does more for 
 
 ## Seven questions to ask any academy before you pay
 
-1. Is the class one-to-one, and exactly how many minutes is it?
+1. Is the class 1-on-1, and exactly how many minutes is it?
 2. Will the same teacher take every class?
 3. Can I choose a male or a female teacher?
 4. What happens when we miss a class?
@@ -169,9 +169,9 @@ Our own answers are on the [questions page](/faq) and the [fees page](/pricing).
 
 The simplest first step is a trial. Book [${t} free trial classes](/free-trial): in the first one the teacher checks the learner's level and tells you which stage to begin at.`,
   faqs: [
-    { q: "Can you really learn the Quran online?", a: "Yes. The Quran is learned by reciting to a teacher who listens and corrects, and a live video class does exactly that. One-to-one online classes often give more reading time than a group class in person." },
+    { q: "Can you really learn the Quran online?", a: "Yes. The Quran is learned by reciting to a teacher who listens and corrects, and a live video class does exactly that. 1-on-1 online classes often give more reading time than a group class in person." },
     { q: "How long does it take to learn to read the Quran online?", a: "A child starting from the alphabet usually finishes Noorani Qaida in 4 to 8 months and a first complete reading of the Quran in a further 1.5 to 3 years, with three classes a week. Adults move through the Qaida in 2 to 4 months." },
-    { q: "What is the best way to learn the Quran online for beginners?", a: "Begin with Noorani Qaida in short, regular one-to-one classes, practise for a few minutes every day, and do not move on to reading the Quran until every letter is pronounced correctly." },
+    { q: "What is the best way to learn the Quran online for beginners?", a: "Begin with Noorani Qaida in short, regular 1-on-1 classes, practise for a few minutes every day, and do not move on to reading the Quran until every letter is pronounced correctly." },
   ],
 };
 
@@ -190,7 +190,7 @@ const vsMadrasah: LibraryPost = {
   updated: NEW,
   body: `## The comparison at a glance
 
-| | Local madrasah (group) | Online, one-to-one |
+| | Local madrasah (group) | Online, 1-on-1 |
 | --- | --- | --- |
 | Time the child reads to the teacher | A few minutes in a one or two hour session | Most of a 30-minute class |
 | Pace | Set by the class | Set by the child |
@@ -200,7 +200,7 @@ const vsMadrasah: LibraryPost = {
 | Travel | Drop-off and pick-up, often on school nights | None |
 | Parent can listen in | Rarely | Always |
 | Choice of teacher | Whoever teaches locally | Any teacher, including female teachers |
-| Typical cost | Usually lower | Higher for one-to-one, similar for a small group |
+| Typical cost | Usually lower | Higher for 1-on-1, similar for a small group |
 
 ## What the madrasah does better
 
@@ -210,7 +210,7 @@ A good madrasah also teaches manners in a group: waiting, listening, respecting 
 
 ## What online classes do better
 
-The honest weakness of most evening madrasahs is arithmetic. With twenty or thirty children and one teacher, each child reads for three or four minutes. The rest of the time is spent waiting. In a one-to-one class the child reads for the whole lesson, so progress is usually much faster.
+The honest weakness of most evening madrasahs is arithmetic. With twenty or thirty children and one teacher, each child reads for three or four minutes. The rest of the time is spent waiting. In a 1-on-1 class the child reads for the whole lesson, so progress is usually much faster.
 
 Online also solves three practical problems: there is no teacher nearby, the family's evenings are already full, or a daughter needs a female teacher and the mosque does not have one.
 
@@ -234,9 +234,9 @@ The two teachers do not need to follow the same book. Tell the online teacher wh
 
 Make up for what is missing. Take your children to Jumu'ah and Eid prayers, arrange for them to learn alongside a sibling or cousin when you can, and let them recite to grandparents. Our guide to [learning the Quran online](/blog/learn-quran-online) explains how to set classes up well, and you can see how our [classes for children](/online-quran-classes-for-kids) run.`,
   faqs: [
-    { q: "Are online Quran classes as good as in-person classes?", a: "For reading, Tajweed and memorisation, a one-to-one online class usually gives a child more correction time than an in-person group class. For community and a connection with the mosque, in-person is better." },
+    { q: "Are online Quran classes as good as in-person classes?", a: "For reading, Tajweed and memorisation, a 1-on-1 online class usually gives a child more correction time than an in-person group class. For community and a connection with the mosque, in-person is better." },
     { q: "Can my child do both madrasah and online classes?", a: "Yes, and many families do. The madrasah provides community and the online class provides individual reading time. Two online classes a week alongside a weekend madrasah is a common pattern." },
-    { q: "Is one-to-one always better than a group?", a: "Not always. Children who enjoy company often work harder in a small group of two to six at the same level, and it costs less. Large groups are where reading time becomes too short." },
+    { q: "Is 1-on-1 always better than a group?", a: "Not always. Children who enjoy company often work harder in a small group of two to six at the same level, and it costs less. Large groups are where reading time becomes too short." },
   ],
 };
 
@@ -293,7 +293,7 @@ You do not need Arabic to understand what the Quran says. Read a clear translati
 
 ## Practical advice for adult beginners
 
-- **Choose private lessons.** Most adults are shy about reading aloud. One-to-one, nobody else hears you.
+- **Choose private lessons.** Most adults are shy about reading aloud. 1-on-1, nobody else hears you.
 - **Keep lessons short and frequent.** Two half-hours a week with daily practice beats one long session.
 - **Ask your questions.** A good teacher expects them. If you would rather ask a woman, sisters can choose a [female teacher](/female-quran-teacher-online).
 - **Do not compare yourself** with born Muslims who have recited since childhood.
@@ -425,7 +425,7 @@ With two classes a week and ten minutes of practice a day, most adults cover the
 
 ## Learning Tajweed with a teacher
 
-In our [online Tajweed classes](/courses/online-tajweed-classes) a teacher listens to your own recitation one-to-one, teaches each rule in a few minutes and has you apply it for the rest of the class. Sisters can study with a female teacher. Strong reciters can go on to an [Ijazah](/courses/quran-ijazah-course).`,
+In our [online Tajweed classes](/courses/online-tajweed-classes) a teacher listens to your own recitation 1-on-1, teaches each rule in a few minutes and has you apply it for the rest of the class. Sisters can study with a female teacher. Strong reciters can go on to an [Ijazah](/courses/quran-ijazah-course).`,
   faqs: [
     { q: "What is Tajweed in simple words?", a: "Tajweed is reciting the Quran correctly: pronouncing each letter from its proper place, with its proper sound, and holding it for the proper length." },
     { q: "How many rules of Tajweed are there?", a: "There is no single agreed number, because rules can be grouped in different ways. Beginners usually learn about nine areas: makharij, the qualities of letters, noon sakinah and tanween, meem sakinah, ghunnah, qalqalah, madd, lam and ra, and stopping." },
@@ -808,11 +808,11 @@ Adults need more repetitions for each line, and they are better at keeping a rou
 
 ## Learning with a teacher
 
-Our [online Hifz classes](/courses/online-hifz-classes) are one-to-one, five days a week, with a written plan and a target date that is reviewed every month. Parents see each day's lesson and attendance in their dashboard. Book [${t} free trial classes](/free-trial) and the teacher will assess the learner's reading first.`,
+Our [online Hifz classes](/courses/online-hifz-classes) are 1-on-1, five days a week, with a written plan and a target date that is reviewed every month. Parents see each day's lesson and attendance in their dashboard. Book [${t} free trial classes](/free-trial) and the teacher will assess the learner's reading first.`,
   faqs: [
     { q: "What is the best age to start Hifz?", a: "Whenever the reading is fluent and correct, which for most children is between 7 and 10. Starting before that means memorising mistakes. Adults can begin at any age." },
     { q: "How many pages a day should I memorise?", a: "Start with three to five lines and increase only when revision stays strong. Half a page a day, five days a week, completes the Quran in about five years." },
-    { q: "Can I do Hifz online?", a: "Yes. Hifz depends on reciting to a teacher every day, and a one-to-one video class does that well. Many learners find daily attendance easier online because there is no travel." },
+    { q: "Can I do Hifz online?", a: "Yes. Hifz depends on reciting to a teacher every day, and a 1-on-1 video class does that well. Many learners find daily attendance easier online because there is no travel." },
   ],
 };
 

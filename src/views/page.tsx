@@ -65,10 +65,10 @@ export default async function Home({ params }: Props) {
             <div className="gold-rule mt-5 lg:mt-7" aria-hidden="true">
               <span />
             </div>
-            <p className="mt-5 max-w-xl text-[1.08rem] leading-relaxed sm:text-[1.13rem] lg:mt-7">{h.sub(site.name, site.trial.classes)}</p>
+            <p className="mt-5 max-w-xl text-[1.08rem] leading-relaxed sm:text-[1.13rem] lg:mt-7">Live 1-on-1 Quran lessons on Zoom or Google Meet with male and female Ijazah-certified teachers. Flexible USA, UK, Canada and Australia time zones. Book 3 free trial classes—no credit card needed.</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-8">
               <Link href={href(lang, "/free-trial")} className="btn btn-primary text-[1.05rem]">Book 3 Free Trial Classes</Link>
-              {wa && <a href={wa} className="btn btn-line text-[1.05rem]" rel="noopener noreferrer">WhatsApp (+92 315 6540714)</a>}
+              {wa && <a href={wa} className="btn btn-line text-[1.05rem]" rel="noopener noreferrer">Message us on WhatsApp</a>}
             </div>
             <dl className="mt-8 grid max-w-xl grid-cols-2 gap-x-8 gap-y-5 border-t border-line pt-6 sm:grid-cols-4">
               {h.facts.map(([k, v]) => (
@@ -208,7 +208,7 @@ export default async function Home({ params }: Props) {
               {h.feesH}
             </h2>
             <div className="mt-6 text-muted">
-              <Ticks items={t.plan.notes(site.classMinutes, site.trial.classes, site.siblingDiscountPercent).slice(0, 3).concat(t.plan.groupNotes(groupClass.minutes, site.trial.classes).slice(0, 1))} />
+              <Ticks items={t.plan.notes(site.classMinutes, site.trial.classes, site.siblingDiscountPercent).filter((note) => !/sibling|second child|2nd child/i.test(note)).slice(0, 2)} />
             </div>
             <Link href={href(lang, "/pricing")} className="link mt-6 inline-block font-semibold">
               {h.feesLink}
@@ -319,10 +319,10 @@ export default async function Home({ params }: Props) {
       <section className="on-emerald bg-emerald py-14 text-center text-white">
         <div className="wrap">
           <h2 className="text-[clamp(1.8rem,1.3rem+2vw,2.8rem)]">Start learning the Quran with a teacher who fits your family</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-white/80">Try three live one-to-one lessons before choosing a monthly plan. No credit card required.</p>
+          <p className="mx-auto mt-3 max-w-2xl text-white/80">Try three live 1-on-1 lessons before choosing a monthly plan. No credit card required.</p>
           <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href={href(lang, "/free-trial")} className="btn btn-primary">Book 3 Free Trial Classes</Link>
-            {wa && <a href={wa} rel="noopener noreferrer" className="btn btn-line border-white text-white">WhatsApp (+92 315 6540714)</a>}
+            {wa && <a href={wa} rel="noopener noreferrer" className="btn btn-line border-white text-white">Message us on WhatsApp</a>}
           </div>
         </div>
       </section>

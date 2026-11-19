@@ -32,7 +32,7 @@ export default async function BillingPage({ searchParams }: { searchParams: Prom
   );
   const rates = new Map(storedRates.map((r) => [`${r.planId}:${r.currency}`, r.monthlyAmount]));
   const rateRows = [
-    ...plans.map((plan) => ({ plan, kind: "One-to-one" })),
+    ...plans.map((plan) => ({ plan, kind: "1-on-1" })),
     ...groupTiers.flatMap((g) => g.plans.map((plan) => ({ plan, kind: `${g.name} · per learner` }))),
   ];
   const toConfirm = invoices.filter((i) => i.status === "claimed");
@@ -116,7 +116,7 @@ export default async function BillingPage({ searchParams }: { searchParams: Prom
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="font-sans text-[1.15rem] font-semibold tracking-normal">Monthly pricing rates</h2>
-            <p className="mt-1 text-sm text-muted">Edit the master rate list in Neon. One-to-one prices are per student; group rates are per learner, flat across class frequencies.</p>
+            <p className="mt-1 text-sm text-muted">Edit the master rate list in Neon. 1-on-1 prices are per student; group rates are per learner, flat across class frequencies.</p>
           </div>
           <Link href="/admin/content?path=%2Fpricing&lang=en" className="link font-semibold">Edit pricing page text</Link>
         </div>

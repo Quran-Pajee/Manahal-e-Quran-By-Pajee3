@@ -89,7 +89,7 @@ const offer = (currency: Currency) => ({
   highPrice: highest(currency),
   offerCount: plans.length,
   category: "Paid",
-  description: `Monthly one-to-one fees; the second child receives ${SIBLING_DISCOUNT_PERCENT}% off their own one-to-one plan.`,
+  description: `Monthly 1-on-1 fees; the second child receives ${SIBLING_DISCOUNT_PERCENT}% off their own 1-on-1 plan.`,
   url: abs("/pricing"),
 });
 
@@ -184,12 +184,12 @@ export const pricingSchema = () => ({
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
   name: `${site.name} monthly fees`,
-  description: `Second child: ${SIBLING_DISCOUNT_PERCENT}% off one-to-one monthly fees. Group fees are per learner with no additional sibling discount.`,
+  description: `Second child: ${SIBLING_DISCOUNT_PERCENT}% off 1-on-1 monthly fees. Group fees are per learner with no additional sibling discount.`,
   url: abs("/pricing"),
   itemListElement: [
     ...plans.map((p) => ({
       "@type": "Offer",
-      name: `One-to-one, ${p.name}, ${site.classMinutes}-minute classes`,
+      name: `1-on-1, ${p.name}, ${site.classMinutes}-minute classes`,
       price: p.prices.USD,
       priceCurrency: "USD",
       eligibleQuantity: { "@type": "QuantitativeValue", value: p.classesPerMonth, unitText: "classes per month" },

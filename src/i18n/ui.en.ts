@@ -12,7 +12,7 @@ export const en = {
     fees: "Fees",
     guides: "Guides",
     login: "Log in",
-    trial: "Book free trial",
+    trial: "Book 3 Free Trial Classes",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     skip: "Skip to content",
@@ -21,8 +21,8 @@ export const en = {
   },
   common: {
     home: "Home",
-    trialCta: (n: number) => `Book ${n} free trial classes`,
-    tryFree: "Try it free",
+    trialCta: (_n: number) => "Book 3 Free Trial Classes",
+    tryFree: "Book 3 Free Trial Classes",
     lastReviewed: (date: string) => `Last reviewed ${date}.`,
     onThisPage: "On this page",
     questions: "Questions",
@@ -34,7 +34,7 @@ export const en = {
     breadcrumb: "Breadcrumb",
   },
   countries: { US: "USA", GB: "UK", AU: "Australia", CA: "Canada" } as Record<string, string>,
-  classTypes: { one: "One-to-one", family: "Family group", community: "Community group" },
+  classTypes: { one: "1-on-1", family: "Family group", community: "Community group" },
   plan: {
     perWeek: (n: number) => `${n} classes a week`,
     detail: (classes: number, minutes: number) => `${classes} classes a month, ${minutes} minutes each.`,
@@ -55,7 +55,7 @@ export const en = {
       community: "Children from the same street, mosque, school or homeschool group, brought together by one organiser",
     },
     notes: (m: number, n: number, discount: number) => [
-      `Every one-to-one plan is one teacher with one student, ${m} minutes a class.`,
+      `Every 1-on-1 plan is one teacher with one student, ${m} minutes a class.`,
       `Your first ${n} classes are free, and no card is needed to book them.`,
       `A second child from the same family gets ${discount}% off.`,
       "Fees are monthly. There is no registration fee and no contract, so you can stop at the end of any month.",
@@ -64,11 +64,11 @@ export const en = {
     ],
     groupNotes: (minutes: number, n: number) => [
       `Group classes are ${minutes} minutes, so every learner still reads to the teacher in each class.`,
-      "Learners in a group are placed at the same level. If levels differ, we suggest two smaller groups or one-to-one classes.",
+      "Learners in a group are placed at the same level. If levels differ, we suggest two smaller groups or 1-on-1 classes.",
       "Fees are per learner. Every learner has their own attendance record, progress report and quizzes.",
       `The first ${n} group classes are free for every learner.`,
-      "A learner can move from a group to one-to-one classes, or back, at the start of any month.",
-      "Hifz and Ijazah are taught one-to-one only, because they need the teacher's full attention.",
+      "A learner can move from a group to 1-on-1 classes, or back, at the start of any month.",
+      "Hifz and Ijazah are taught 1-on-1 only, because they need the teacher's full attention.",
     ],
     currency: "Currency",
     classType: "Class type",
@@ -139,7 +139,7 @@ export const en = {
     rights: "All rights reserved.",
     projectOf: "A project of",
     description:
-      "Live online Quran classes for kids and adults, one-to-one or in small groups. Noorani Qaida, Quran reading, Tajweed, Hifz, Tafseer, Arabic and Ijazah with male and female teachers, timed for families in the USA, UK, Canada and Australia.",
+      "Live online Quran classes for kids and adults, 1-on-1 or in small groups. Noorani Qaida, Quran reading, Tajweed, Hifz, Tafseer, Arabic and Ijazah with male and female teachers, timed for families in the USA, UK, Canada and Australia.",
   },
   cookies: {
     text: "We use cookies to measure which pages help families find us. Nothing is loaded until you choose.",
@@ -155,13 +155,13 @@ export const en = {
   home: {
     metaTitle: (name: string) => `Online Quran Classes for Kids and Adults | ${name}`,
     metaDescription: (from: string, n: number) =>
-      `Online Quran classes for kids and adults: Qaida, Tajweed, Hifz and Ijazah, one-to-one or in a small group. From ${from} per learner a month. ${n} free trial classes.`,
-    h1: "Online Quran classes for kids and adults, one-to-one or in a small group",
+      `Online Quran classes for kids and adults: Qaida, Tajweed, Hifz and Ijazah, 1-on-1 or in a small group. From ${from} per learner a month. ${n} free trial classes.`,
+    h1: "Online Quran classes for kids and adults, 1-on-1 or in a small group",
     sub: (name: string, n: number) =>
       `${name} teaches Noorani Qaida, Quran reading, Tajweed, Hifz and Ijazah in live video classes: one teacher with one student, or a small group of siblings or friends. Lessons are timed for families in the USA, UK, Canada and Australia, with male and female teachers. Your first ${n} classes are free.`,
     feesCta: (from: string) => `See fees, from ${from} per learner`,
     facts: [
-      ["Class", "One-to-one or small group"],
+      ["Class", "1-on-1 or small group"],
       ["Length", "30 to 45 minutes"],
       ["Teachers", "Male and female"],
       ["Ages", "4 to adult"],
@@ -180,14 +180,14 @@ export const en = {
     howH: "How online Quran classes work",
     howSub: (apps: string) => `You and the teacher join a live video call on ${apps}. The teacher shares the page, the student reads aloud and every mistake is corrected as it happens.`,
     how: [
-      ["Book your free trial", "Send the form with the days and times that suit you. We reply within one working day."],
+      ["Book 3 Free Trial Classes", "Send the form with the days and times that suit you. We reply within one working day."],
       ["Level check in class one", "The teacher listens to the student read and tells you exactly where to start."],
       ["Fixed days, same teacher", "You choose the timetable in your own time zone. One teacher takes every class."],
       ["Progress you can see", "Attendance, each lesson, homework and quiz results appear in your dashboard after every class."],
     ] as [string, string][],
-    compareH: "One-to-one, small group or the weekend madrasah?",
+    compareH: "1-on-1, small group or the weekend madrasah?",
     compareSub: "Each has something the others do not. Many families use an online class beside the mosque class.",
-    compareHead: ["", "One-to-one online", "Small group online", "Weekend class at a mosque"],
+    compareHead: ["", "1-on-1 online", "Small group online", "Weekend class at a mosque"],
     compareRows: (one: string, group: string) =>
       [
         ["Learners with one teacher", "1", "2 to 6, at the same level", "Often 10 or more"],
@@ -217,7 +217,7 @@ export const en = {
     metaDescription: (count: number, name: string, n: number) =>
       `All ${count} online Quran courses at ${name}: Qaida, Quran reading, Tajweed, Hifz, Ijazah, Tafseer, Arabic and Islamic studies. ${n} free trial classes.`,
     crumb: "Courses",
-    h1: "Online Quran courses, one-to-one or in small groups",
+    h1: "Online Quran courses, 1-on-1 or in small groups",
     lead: (name: string, count: number) =>
       `${name} offers ${count} courses. Five form a path from the Arabic alphabet to Ijazah. Three more, in Tafseer, Quranic Arabic and Islamic studies, can be taken alongside at any stage. Every course is a live class with your own teacher.`,
     pathH: "The learning path",
@@ -229,7 +229,7 @@ export const en = {
   },
   coursePage: {
     facts: ["Who it is for", "Starting level", "Typical duration", "Classes"],
-    oneToOne: "one-to-one",
+    oneToOne: "1-on-1",
     whoH: "Is this course right for you?",
     before: "Before you start",
     after: "When you finish",
@@ -238,7 +238,7 @@ export const en = {
     methodNav: "How it is taught",
     feesH: (course: string) => `Fees for ${course}`,
     feesNav: "Fees",
-    feesSub: (m: number, n: number) => `Monthly fees for one-to-one classes of ${m} minutes. The first ${n} classes are free. Group classes cost less for each learner. See the`,
+    feesSub: (m: number, n: number) => `Monthly fees for 1-on-1 classes of ${m} minutes. The first ${n} classes are free. Group classes cost less for each learner. See the`,
     feesLink: "fees page",
     feesHead: "Plan",
     questionsH: (course: string) => `Questions about ${course}`,
@@ -252,27 +252,27 @@ export const en = {
   pricingPage: {
     metaTitle: "Online Quran Classes Fees: Monthly Prices by Country",
     metaDescription: (usd: string, gbp: string, aud: string, cad: string, group: string, n: number) =>
-      `Online Quran class fees: one-to-one from ${usd}, ${gbp}, ${aud} or ${cad} a month, group classes from ${group} per learner. No registration fee. ${n} free trial classes.`,
+      `Online Quran class fees: 1-on-1 from ${usd}, ${gbp}, ${aud} or ${cad} a month, group classes from ${group} per learner. No registration fee. ${n} free trial classes.`,
     crumb: "Fees",
     h1: "Fees for online Quran classes",
     lead: (name: string, a: string, b: string, c: string, m: number, group: string, n: number) =>
-      `One-to-one classes at ${name} cost ${a} a month for 2 classes a week, ${b} for 3 and ${c} for 5. Each class is ${m} minutes with your own teacher. Group classes for siblings, families and communities start at ${group} per learner. There is no registration fee, and the first ${n} classes are free.`,
-    includesH: "What every one-to-one plan includes",
+      `1-on-1 classes at ${name} cost ${a} a month for 2 classes a week, ${b} for 3 and ${c} for 5. Each class is ${m} minutes with your own teacher. Group classes for siblings, families and communities start at ${group} per learner. There is no registration fee, and the first ${n} classes are free.`,
+    includesH: "What every 1-on-1 plan includes",
     groupH: "Group class fees",
     groupSub: (minutes: number) => `Per learner, per month, for classes of ${minutes} minutes.`,
     groupNotesH: "How group classes work",
     groupLink: "More about group classes",
-    allH: "All one-to-one fees by country",
+    allH: "All 1-on-1 fees by country",
     allSub: (m: number) => `Monthly fee for one student, with the price of a single ${m}-minute class in brackets.`,
     whichH: "Which plan should I choose?",
     whichHead: ["Your situation", "Plan that fits"],
     which: [
-      ["A child starting Noorani Qaida or Quran reading", "One-to-one, 3 classes a week"],
+      ["A child starting Noorani Qaida or Quran reading", "1-on-1, 3 classes a week"],
       ["Two or three siblings at the same level", "Family group, 3 classes a week"],
-      ["A child who also attends a weekend madrasah", "One-to-one, 2 classes a week"],
+      ["A child who also attends a weekend madrasah", "1-on-1, 2 classes a week"],
       ["Children from several families in one neighbourhood", "Community group, 2 or 3 classes a week"],
-      ["An adult learning around work", "One-to-one, 2 or 3 classes a week"],
-      ["A Hifz or Ijazah student", "One-to-one, 5 classes a week"],
+      ["An adult learning around work", "1-on-1, 2 or 3 classes a week"],
+      ["A Hifz or Ijazah student", "1-on-1, 5 classes a week"],
     ] as [string, string][],
     whichNote: "You can move between plans at the start of any month.",
     faqH: "Questions about fees",
@@ -284,7 +284,7 @@ export const en = {
     metaDescription: (n: number) =>
       `Book ${n} free online Quran classes for your child, yourself or a group. No card needed. Choose a course, a male or female teacher and times that suit you.`,
     crumb: "Free trial",
-    h1: (n: number) => `Book ${n} free trial Quran classes`,
+    h1: (_n: number) => "Book 3 Free Trial Classes",
     lead: (n: number, m: number) =>
       `Try ${n} full classes of ${m} minutes with a teacher matched to the student. There is nothing to pay and no card to enter. If you want to continue afterwards, you choose a monthly plan.`,
     afterH: "What happens after you send the form",
@@ -365,7 +365,7 @@ export const en = {
       "Girls and sisters can choose a female teacher.",
     ],
     teachH: "What we teach",
-    teach: "Eight courses: Noorani Qaida, Quran reading, Tajweed, Hifz, Ijazah, Translation and Tafseer, Quranic Arabic and Islamic studies for children, one-to-one or in small groups.",
+    teach: "Eight courses: Noorani Qaida, Quran reading, Tajweed, Hifz, Ijazah, Translation and Tafseer, Quranic Arabic and Islamic studies for children, 1-on-1 or in small groups.",
     allCourses: "All courses",
   },
   notFound: {

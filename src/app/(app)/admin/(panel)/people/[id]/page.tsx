@@ -136,7 +136,7 @@ export default async function PersonPage({ params, searchParams }: { params: Pro
                             {l.name}
                           </Link>
                           <span className="text-[0.95rem] text-muted">
-                            {[l.birthYear && `born ${l.birthYear}`, l.gender, courseName(l.course), l.classKind === "one" ? "one-to-one" : `${l.classKind} group`, l.teacherPref && `${l.teacherPref} teacher`].filter(Boolean).join(" · ")}
+                            {[l.birthYear && `born ${l.birthYear}`, l.gender, courseName(l.course), l.classKind === "one" ? "1-on-1" : `${l.classKind} group`, l.teacherPref && `${l.teacherPref} teacher`].filter(Boolean).join(" · ")}
                           </span>
                         </div>
                         {l.notes && <p className="mt-1 text-[0.95rem]">{l.notes}</p>}

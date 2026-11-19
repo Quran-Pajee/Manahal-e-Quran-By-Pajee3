@@ -3,16 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: { unoptimized: true },
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "manahal-e-quran2.vercel.app" }],
-        destination: "https://quran.pajee.org/:path*",
-        permanent: true,
-      },
-    ];
-  },
   // The local development database (used only when DATABASE_URL is not set) must not be bundled.
   serverExternalPackages: ["@electric-sql/pglite"],
   turbopack: {

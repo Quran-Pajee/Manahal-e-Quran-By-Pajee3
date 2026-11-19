@@ -1,0 +1,21 @@
+{
+  "original_css_identical": true,
+  "original_logo_identical": true,
+  "asset_count": 16,
+  "original_assets_missing": [],
+  "literal_asset_refs_missing": [],
+  "image_unoptimized": true,
+  "preview_redirect_removed": true,
+  "cms_return_h1_mapping": true,
+  "homepage_trialcard_instances": 1,
+  "honeypot_hidden_inline": true,
+  "invalid_div_autocomplete_absent": true,
+  "pricing_table_instances": 1,
+  "discount_label_instances_in_pricing_page": 0,
+  "rtl_html": true,
+  "isr_home": true,
+  "isr_pricing": true,
+  "tailwind_utilities_present": true,
+  "npm_build": "BLOCKED: dependencies not installed (next not found)",
+  "typescript": "BLOCKED: @types/react, @types/node not installed"
+}

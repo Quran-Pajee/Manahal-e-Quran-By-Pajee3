@@ -51,7 +51,7 @@ export const legals: Legal[] = [
     blocks: [
       { type: "h2", text: "Classes" },
       { type: "ul", items: [
-        `Classes are live, one-to-one and ${site.classMinutes} minutes long unless a longer class is agreed.`,
+        `Classes are live, 1-on-1 and ${site.classMinutes} minutes long unless a longer class is agreed.`,
         `Classes are held on ${site.classApps}. You need your own device and internet connection.`,
         "A parent or guardian must book on behalf of anyone under 18 and should be at home during a child's class.",
       ] },

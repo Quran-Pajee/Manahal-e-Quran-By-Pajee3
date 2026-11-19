@@ -25,7 +25,7 @@ export const faqGroups: FaqGroup[] = [
       {
         id: "how",
         q: "How do online Quran classes work?",
-        a: `You and your teacher join a live video call on ${site.classApps}. The teacher shares the Qaida or Quran page on screen, the student reads aloud, and the teacher corrects each mistake as it happens. Classes are one-to-one for ${m} minutes, or in a small group for ${groupClass.minutes} minutes, at fixed days and times you choose.`,
+        a: `You and your teacher join a live video call on ${site.classApps}. The teacher shares the Qaida or Quran page on screen, the student reads aloud, and the teacher corrects each mistake as it happens. Classes are 1-on-1 for ${m} minutes, or in a small group for ${groupClass.minutes} minutes, at fixed days and times you choose.`,
       },
       {
         id: "need",
@@ -80,17 +80,17 @@ export const faqGroups: FaqGroup[] = [
       {
         id: "cost",
         q: "How much do online Quran classes cost?",
-        a: `One-to-one classes at ${site.name} cost ${money("USD", lowest("USD"))} to ${money("USD", highest("USD"))} a month in the USA, ${money("GBP", lowest("GBP"))} to ${money("GBP", highest("GBP"))} in the UK, ${money("AUD", lowest("AUD"))} to ${money("AUD", highest("AUD"))} in Australia and ${money("CAD", lowest("CAD"))} to ${money("CAD", highest("CAD"))} in Canada, for ${plans[0].perWeek} to ${plans[plans.length - 1].perWeek} classes a week. Group classes start at ${money("USD", lowestGroup("USD"))} per learner. There is no registration fee.`,
+        a: `1-on-1 classes at ${site.name} cost ${money("USD", lowest("USD"))} to ${money("USD", highest("USD"))} a month in the USA, ${money("GBP", lowest("GBP"))} to ${money("GBP", highest("GBP"))} in the UK, ${money("AUD", lowest("AUD"))} to ${money("AUD", highest("AUD"))} in Australia and ${money("CAD", lowest("CAD"))} to ${money("CAD", highest("CAD"))} in Canada, for ${plans[0].perWeek} to ${plans[plans.length - 1].perWeek} classes a week. Group classes start at ${money("USD", lowestGroup("USD"))} per learner. There is no registration fee.`,
       },
       {
         id: "group",
         q: "Do you offer group classes for siblings or friends?",
-        a: `Yes. A family group is 2 to 4 learners from one household, and a community group is 3 to 6 children from the same neighbourhood, mosque or school. Group classes are ${groupClass.minutes} minutes, learners are placed at the same level, and the fee per learner is lower than one-to-one. See [group Quran classes](/group-quran-classes).`,
+        a: `Yes. A family group is 2 to 4 learners from one household, and a community group is 3 to 6 children from the same neighbourhood, mosque or school. Group classes are ${groupClass.minutes} minutes, learners are placed at the same level, and the fee per learner is lower than 1-on-1. See [group Quran classes](/group-quran-classes).`,
       },
       {
         id: "sibling",
         q: "Is there a discount for siblings?",
-        a: `Yes. In one-to-one classes a second child from the same family gets ${site.siblingDiscountPercent}% off the monthly fee. Siblings at the same level can also share a family group class, which costs less for each child.`,
+        a: `Yes. In 1-on-1 classes a second child from the same family gets ${site.siblingDiscountPercent}% off the monthly fee. Siblings at the same level can also share a family group class, which costs less for each child.`,
       },
       ...(payWays.length ? [{ id: "pay", q: "How do I pay?", a: `Fees are paid monthly in advance. An invoice appears in your dashboard each month, and you can pay it by ${payWays.join(", ").replace(/, ([^,]*)$/, " or $1")}. Nothing is charged automatically.` }] : []),
       {
@@ -101,7 +101,7 @@ export const faqGroups: FaqGroup[] = [
       {
         id: "miss",
         q: "What happens if we miss a class?",
-        a: "Tell the teacher at least a few hours ahead and a one-to-one class is rescheduled within the same month. Classes missed without notice are not made up. Group classes run at their fixed time for the whole group.",
+        a: "Tell the teacher at least a few hours ahead and a 1-on-1 class is rescheduled within the same month. Classes missed without notice are not made up. Group classes run at their fixed time for the whole group.",
       },
       {
         id: "cancel",

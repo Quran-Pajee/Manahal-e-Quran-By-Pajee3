@@ -86,7 +86,7 @@ export const en = {
     anyCourse: "Not set",
     male: "Male",
     female: "Female",
-    kinds: { one: "One-to-one", family: "Family group", community: "Community group" } as Record<string, string>,
+    kinds: { one: "1-on-1", family: "Family group", community: "Community group" } as Record<string, string>,
     attendance: { present: "Present", late: "Late", absent: "Absent" } as Record<string, string>,
     levels: { new: "Beginner", qaida: "Reading the Qaida", reading: "Reads the Quran slowly", fluent: "Reads fluently", hifz: "Memorising" } as Record<string, string>,
     learnersN: (n: number) => (n === 1 ? "1 learner" : `${n} learners`),
@@ -128,7 +128,7 @@ export const en = {
     addBtn: "Add learner",
     added: "Learner added.",
     trialH: "Not had your free trial yet?",
-    trialCta: "Book free trial",
+    trialCta: "Book 3 Free Trial Classes",
   },
 
   learner: {

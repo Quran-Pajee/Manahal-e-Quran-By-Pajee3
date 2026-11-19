@@ -17,7 +17,7 @@ export function ClassFields({ teachers, cls, kind, course }: { teachers: User[];
           Class type
         </label>
         <select className="field" id="kind" name="kind" defaultValue={cls?.kind ?? kind ?? "one"}>
-          <option value="one">One-to-one</option>
+          <option value="one">1-on-1</option>
           <option value="family">Family group (2 to 4)</option>
           <option value="community">Community group (3 to 6)</option>
         </select>

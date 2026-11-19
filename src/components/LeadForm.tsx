@@ -189,7 +189,7 @@ export function LeadForm({ lang, source, courses, trialClasses, variant = "quick
       <input type="hidden" name="lang" value={lang} />
       {/* Choices that are not on show still travel with the form if the browser sends it without scripts. */}
       {!showChoice && <input type="hidden" name="classType" value={classType} />}
-      {!showChoice && <input type="hidden" name="teacherPref" value={teacher} />}
+      
       {!showRest && <input type="hidden" name="studentFor" value={studentFor} />}
 
       <div className={variant === "quick" ? "grid gap-3" : two}>
@@ -336,7 +336,7 @@ export function LeadForm({ lang, source, courses, trialClasses, variant = "quick
       )}
 
       {/* Honeypot: hidden from people, tempting to bots */}
-      <div aria-hidden="true" className="hidden" tabIndex={-1} autoComplete="off">
+      <div aria-hidden="true" style={{ display: "none" }}>
         <label>
           Website
           <input name="website" tabIndex={-1} autoComplete="off" />

@@ -131,7 +131,7 @@ export async function signUpAction(_prev: FormState, fd: FormData): Promise<Form
           studentFor: role === "student" ? "Myself" : "My child",
           studentAge: "",
           teacherPref: teacherPref === "female" ? "Female teacher" : teacherPref === "male" ? "Male teacher" : "",
-          classType: accountKind === "community" ? "Community group" : accountKind === "family" && Number(v.learners) > 1 ? "Family group" : "One-to-one",
+          classType: accountKind === "community" ? "Community group" : accountKind === "family" && Number(v.learners) > 1 ? "Family group" : "1-on-1",
           studentCount: role === "guardian" ? v.learners : "1",
           preferredTime: v.preferredTime,
           timezone: v.timezone,

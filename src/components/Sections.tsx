@@ -13,7 +13,7 @@ type Defaults = TrialDefaults;
 export function TrialSection({ lang, source, ...defaults }: { lang: Lang; source: string } & Defaults) {
   const t = ui[lang].trialSection;
   const wa = whatsappLink();
-  const isGroup = Boolean(defaults.defaultClassType && defaults.defaultClassType !== "One-to-one");
+  const isGroup = Boolean(defaults.defaultClassType && defaults.defaultClassType !== "1-on-1");
   return (
     <section className="on-emerald lattice bg-emerald text-white" aria-labelledby="trial-heading">
       <div className="wrap grid items-center gap-10 py-14 lg:grid-cols-[1fr_29rem] lg:py-20">

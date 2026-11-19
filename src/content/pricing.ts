@@ -5,12 +5,12 @@ import { site } from "./site";
 export const SIBLING_DISCOUNT_PERCENT = 20 as const;
 site.siblingDiscountPercent = SIBLING_DISCOUNT_PERCENT;
 
-/** Only the second child on a one-to-one plan receives the sibling discount. */
+/** Only the second child on a 1-on-1 plan receives the sibling discount. */
 export const siblingPrice = (monthlyPrice: number, childPosition: number): number =>
   Math.round(monthlyPrice * (childPosition === 2 ? 1 - SIBLING_DISCOUNT_PERCENT / 100 : 1) * 100) / 100;
 
 /**
- * Monthly fees for one-to-one classes of 30 minutes.
+ * Monthly fees for 1-on-1 classes of 30 minutes.
  * These are starting figures set against what online Quran academies charge in 2026.
  * Change them here and every page, FAQ and schema block updates.
  */

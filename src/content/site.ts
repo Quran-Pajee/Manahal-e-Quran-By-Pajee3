@@ -37,7 +37,7 @@ export const site = {
     url: "https://pajee.org",
   },
   description:
-    "Live one-to-one online Quran classes for kids and adults. Noorani Qaida, Quran reading, Tajweed, Hifz, Tafseer, Arabic and Ijazah with male and female teachers, timed for families in the USA, UK, Canada and Australia.",
+    "Live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Quran reading, Tajweed, Hifz, Tafseer, Arabic and Ijazah with male and female teachers, timed for families in the USA, UK, Canada and Australia.",
 
   // Contact. Digits only for WhatsApp, with country code (no +, no spaces).
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "923156540714",
@@ -89,4 +89,4 @@ export const phoneLabel = () => {
   return `+${n}`;
 };
 
-export const trialLabel = `Book ${site.trial.classes} free trial classes`;
+export const trialLabel = "Book 3 Free Trial Classes";

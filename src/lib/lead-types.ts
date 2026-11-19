@@ -68,7 +68,7 @@ export const COUNTRIES = [
 ];
 
 export const TEACHER_PREFS = ["No preference", "Female teacher", "Male teacher"];
-export const CLASS_TYPES = ["One-to-one", "Family group", "Community group"];
+export const CLASS_TYPES = ["1-on-1", "Family group", "Community group"];
 export const STUDENT_FOR = ["My child", "Myself", "My child and myself"];
 
 /** Where a lead came from, in one readable word, for the dashboard. */

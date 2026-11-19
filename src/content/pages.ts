@@ -38,7 +38,7 @@ const m = site.classMinutes;
 
 const feeTable = (c: Currency): Block => ({
   type: "table",
-  caption: `Monthly fees for one-to-one ${m}-minute classes`,
+  caption: `Monthly fees for 1-on-1 ${m}-minute classes`,
   head: ["Plan", "Classes a month", "Monthly fee", "Per class"],
   rows: plans.map((p) => [p.name, String(p.classesPerMonth), money(c, p.prices[c]), money(c, Math.round((p.prices[c] / p.classesPerMonth) * 100) / 100)]),
 });
@@ -48,7 +48,7 @@ const feeRange = (c: Currency) => `${money(c, lowest(c))} to ${money(c, highest(
 const countryFaqs = (name: string, c: Currency, zones: string): Faq[] => [
   {
     q: `How much do online Quran classes cost in ${name}?`,
-    a: `At ${site.name}, one-to-one classes cost ${feeRange(c)}, depending on whether you take 2, 3 or 5 classes a week. Each class is ${m} minutes. The first ${t} classes are free.`,
+    a: `At ${site.name}, 1-on-1 classes cost ${feeRange(c)}, depending on whether you take 2, 3 or 5 classes a week. Each class is ${m} minutes. The first ${t} classes are free.`,
   },
   {
     q: `What time are classes for students in ${name}?`,
@@ -60,7 +60,7 @@ const countryFaqs = (name: string, c: Currency, zones: string): Faq[] => [
   },
   {
     q: "What age can my child start?",
-    a: "Most children are ready from age 4 or 5, starting with Noorani Qaida. There is no upper age limit. Adults and seniors learn in their own one-to-one classes.",
+    a: "Most children are ready from age 4 or 5, starting with Noorani Qaida. There is no upper age limit. Adults and seniors learn in their own 1-on-1 classes.",
   },
   {
     q: "How do I start?",
@@ -105,8 +105,8 @@ export const landings: Landing[] = [
     nav: "USA",
     h1: "Online Quran classes in the USA for kids and adults",
     metaTitle: "Online Quran Classes USA: 1-to-1 for Kids and Adults",
-    metaDescription: `One-to-one online Quran classes in the USA, in Eastern, Central, Mountain and Pacific time. Qaida, Tajweed and Hifz. From ${money("USD", lowest("USD"))} a month. ${t} free trial classes.`,
-    answer: `${site.name} teaches the Quran to children and adults across the United States in live one-to-one video classes. Lessons are ${m} minutes, scheduled in your own time zone from Eastern to Pacific, with male and female teachers who teach in English. Fees are ${feeRange("USD")} and the first ${t} classes are free.`,
+    metaDescription: `1-on-1 online Quran classes in the USA, in Eastern, Central, Mountain and Pacific time. Qaida, Tajweed and Hifz. From ${money("USD", lowest("USD"))} a month. ${t} free trial classes.`,
+    answer: `${site.name} teaches the Quran to children and adults across the United States in live 1-on-1 video classes. Lessons are ${m} minutes, scheduled in your own time zone from Eastern to Pacific, with male and female teachers who teach in English. Fees are ${feeRange("USD")} and the first ${t} classes are free.`,
     facts: [
       { label: "Class type", value: "One teacher, one student, live video" },
       { label: "Time zones", value: "ET, CT, MT, PT, Alaska and Hawaii" },
@@ -153,8 +153,8 @@ export const landings: Landing[] = [
     nav: "UK",
     h1: "Online Quran classes in the UK for children and adults",
     metaTitle: "Online Quran Classes UK: 1-to-1 for Children and Adults",
-    metaDescription: `Live one-to-one online Quran classes for UK families. Qaida, Tajweed and Hifz with male and female teachers at UK times. From ${money("GBP", lowest("GBP"))} a month. ${t} free trial classes.`,
-    answer: `${site.name} teaches the Quran to children and adults across the United Kingdom in live one-to-one video lessons. Each lesson is ${m} minutes, at UK times you choose, with male and female teachers who teach in English. Fees are ${feeRange("GBP")} and the first ${t} lessons are free.`,
+    metaDescription: `Live 1-on-1 online Quran classes for UK families. Qaida, Tajweed and Hifz with male and female teachers at UK times. From ${money("GBP", lowest("GBP"))} a month. ${t} free trial classes.`,
+    answer: `${site.name} teaches the Quran to children and adults across the United Kingdom in live 1-on-1 video lessons. Each lesson is ${m} minutes, at UK times you choose, with male and female teachers who teach in English. Fees are ${feeRange("GBP")} and the first ${t} lessons are free.`,
     facts: [
       { label: "Class type", value: "One teacher, one pupil, live video" },
       { label: "Times", value: "UK time (GMT and BST), 7 days a week" },
@@ -165,7 +165,7 @@ export const landings: Landing[] = [
     blocks: [
       { type: "h2", text: "Why UK families are moving Quran lessons online" },
       { type: "p", text: "The 2021 Census counted about 3.9 million Muslims in England and Wales, 6.5% of the population. In cities such as London, Birmingham, Bradford, Manchester and Leicester there is a madrasah within walking distance, yet many parents still choose a private online teacher." },
-      { type: "p", text: "The reason is time with the teacher. In an evening madrasah a child may read to the teacher for three or four minutes out of two hours. In a one-to-one lesson the child reads for the full half hour and every mistake is corrected. Families outside the big cities, from Cornwall to the Highlands, get a qualified teacher without a long drive." },
+      { type: "p", text: "The reason is time with the teacher. In an evening madrasah a child may read to the teacher for three or four minutes out of two hours. In a 1-on-1 lesson the child reads for the full half hour and every mistake is corrected. Families outside the big cities, from Cornwall to the Highlands, get a qualified teacher without a long drive." },
       { type: "h2", text: "Lesson times in the UK" },
       {
         type: "table",
@@ -201,8 +201,8 @@ export const landings: Landing[] = [
     nav: "Australia",
     h1: "Online Quran classes in Australia for kids and adults",
     metaTitle: "Online Quran Classes Australia: 1-to-1 Kids and Adults",
-    metaDescription: `One-to-one online Quran classes in Australia, at AEST, ACST and AWST times. Qaida, Tajweed and Hifz. From ${money("AUD", lowest("AUD"))} a month. ${t} free trial classes.`,
-    answer: `${site.name} teaches the Quran to children and adults across Australia in live one-to-one video classes. Each class is ${m} minutes, booked in your own time zone from Perth to Sydney, with male and female teachers who teach in English. Fees are ${feeRange("AUD")} and the first ${t} classes are free.`,
+    metaDescription: `1-on-1 online Quran classes in Australia, at AEST, ACST and AWST times. Qaida, Tajweed and Hifz. From ${money("AUD", lowest("AUD"))} a month. ${t} free trial classes.`,
+    answer: `${site.name} teaches the Quran to children and adults across Australia in live 1-on-1 video classes. Each class is ${m} minutes, booked in your own time zone from Perth to Sydney, with male and female teachers who teach in English. Fees are ${feeRange("AUD")} and the first ${t} classes are free.`,
     facts: [
       { label: "Class type", value: "One teacher, one student, live video" },
       { label: "Time zones", value: "AEST/AEDT, ACST/ACDT and AWST" },
@@ -213,7 +213,7 @@ export const landings: Landing[] = [
     blocks: [
       { type: "h2", text: "Why Australian Muslim families learn Quran online" },
       { type: "p", text: "The 2021 Census recorded 813,392 Muslims in Australia, 3.2% of the population. Most live in Sydney and Melbourne, around suburbs such as Lakemba, Auburn, Bankstown, Broadmeadows and Dandenong. Families in Brisbane, Perth, Adelaide, Canberra, Darwin and regional towns have far fewer teachers to choose from." },
-      { type: "p", text: "Distance is the issue online classes solve. A family in Townsville or Shepparton gets the same one-to-one teacher as a family in Western Sydney, and nobody spends an hour in the car for a thirty-minute lesson." },
+      { type: "p", text: "Distance is the issue online classes solve. A family in Townsville or Shepparton gets the same 1-on-1 teacher as a family in Western Sydney, and nobody spends an hour in the car for a thirty-minute lesson." },
       { type: "h2", text: "Class times across Australian time zones" },
       {
         type: "table",
@@ -248,8 +248,8 @@ export const landings: Landing[] = [
     nav: "Canada",
     h1: "Online Quran classes in Canada for kids and adults",
     metaTitle: "Online Quran Classes Canada: 1-to-1 Kids and Adults",
-    metaDescription: `One-to-one online Quran classes in Canada, in every Canadian time zone. Qaida, Tajweed and Hifz. From ${money("CAD", lowest("CAD"))} a month. ${t} free trial classes.`,
-    answer: `${site.name} teaches the Quran to children and adults across Canada in live one-to-one video classes. Each class is ${m} minutes, booked in your own time zone from Pacific to Atlantic, with male and female teachers who teach in English. Fees are ${feeRange("CAD")} and the first ${t} classes are free.`,
+    metaDescription: `1-on-1 online Quran classes in Canada, in every Canadian time zone. Qaida, Tajweed and Hifz. From ${money("CAD", lowest("CAD"))} a month. ${t} free trial classes.`,
+    answer: `${site.name} teaches the Quran to children and adults across Canada in live 1-on-1 video classes. Each class is ${m} minutes, booked in your own time zone from Pacific to Atlantic, with male and female teachers who teach in English. Fees are ${feeRange("CAD")} and the first ${t} classes are free.`,
     facts: [
       { label: "Class type", value: "One teacher, one student, live video" },
       { label: "Time zones", value: "PT, MT, CT, ET, AT and Newfoundland" },
@@ -260,7 +260,7 @@ export const landings: Landing[] = [
     blocks: [
       { type: "h2", text: "Why Canadian Muslim families learn Quran online" },
       { type: "p", text: "The 2021 Census counted close to 1.8 million Muslims in Canada, 4.9% of the population. The largest communities are in the Greater Toronto Area, Montreal, Ottawa, Calgary, Edmonton and Vancouver. Families in smaller cities, and anyone who has driven to a mosque class in January, know why a class at home is appealing." },
-      { type: "p", text: "Online classes give every family the same one-to-one teacher, whether you are in Mississauga, Saskatoon or St. John's, with no winter driving and no waiting list." },
+      { type: "p", text: "Online classes give every family the same 1-on-1 teacher, whether you are in Mississauga, Saskatoon or St. John's, with no winter driving and no waiting list." },
       { type: "h2", text: "Class times across Canadian time zones" },
       {
         type: "table",
@@ -286,13 +286,13 @@ export const landings: Landing[] = [
     slug: "online-quran-classes-for-kids",
     kind: "audience",
     nav: "For kids",
-    h1: "Online Quran classes for kids, one-to-one with a patient teacher",
+    h1: "Online Quran classes for kids, 1-on-1 with a patient teacher",
     metaTitle: "Online Quran Classes for Kids: 1-to-1, Ages 4 to 15",
-    metaDescription: `One-to-one online Quran classes for kids aged 4 to 15: Noorani Qaida, reading, Tajweed and Hifz with patient male and female teachers. ${t} free trial classes.`,
+    metaDescription: `1-on-1 online Quran classes for kids aged 4 to 15: Noorani Qaida, reading, Tajweed and Hifz with patient male and female teachers. ${t} free trial classes.`,
     answer: `Online Quran classes for kids are live video lessons where one teacher teaches one child to read, recite and memorize the Quran. At ${site.name}, classes are ${m} minutes, start from age 4 with Noorani Qaida, and are taught by male or female teachers who are trained to keep young children engaged. The first ${t} classes are free.`,
     facts: [
       { label: "Ages", value: "4 to 15" },
-      { label: "Class length", value: `${m} minutes, one-to-one` },
+      { label: "Class length", value: `${m} minutes, 1-on-1` },
       { label: "Teachers", value: "Male and female, English-speaking" },
       { label: "Free trial", value: `${t} classes, no card needed` },
     ],
@@ -350,8 +350,8 @@ export const landings: Landing[] = [
       { type: "p", text: `Classes cost ${feeRange("USD")} in the USA, ${feeRange("GBP")} in the UK, ${feeRange("AUD")} in Australia and ${feeRange("CAD")} in Canada. A second child gets ${site.siblingDiscountPercent}% off. Details are on the [fees page](/pricing).` },
     ],
     faqs: [
-      { q: "What is the best age for a child to start Quran classes?", a: "Between 4 and 6 for most children. At that age they copy sounds easily and can sit for a short one-to-one class. Children who start later catch up quickly, so there is no age that is too late." },
-      { q: "Are online Quran classes effective for young children?", a: "Yes, when the class is one-to-one and short. The child reads for almost the whole class and every mistake is heard, which is hard to achieve in a group. Children under 7 do best with a parent close by at first." },
+      { q: "What is the best age for a child to start Quran classes?", a: "Between 4 and 6 for most children. At that age they copy sounds easily and can sit for a short 1-on-1 class. Children who start later catch up quickly, so there is no age that is too late." },
+      { q: "Are online Quran classes effective for young children?", a: "Yes, when the class is 1-on-1 and short. The child reads for almost the whole class and every mistake is heard, which is hard to achieve in a group. Children under 7 do best with a parent close by at first." },
       { q: "How many classes a week does my child need?", a: "Three classes a week suits most children for Qaida and reading. Hifz needs five. Two a week works if your child also attends a weekend madrasah." },
       { q: "Can my daughter have a female teacher?", a: "Yes. Choose “Female teacher” on the trial form." },
       { q: "Can siblings share a class?", a: `Each child gets their own ${m}-minute class because children are almost never at the same level. Classes can be booked back to back with the same teacher, and the second child gets ${site.siblingDiscountPercent}% off.` },
@@ -366,7 +366,7 @@ export const landings: Landing[] = [
     h1: "Online Quran classes for adults, private and at your pace",
     metaTitle: "Online Quran Classes for Adults: Private 1-to-1 Lessons",
     metaDescription: `Private online Quran classes for adults and reverts. Start from the alphabet or fix your Tajweed, at times that fit around work. ${t} free trial classes.`,
-    answer: `Online Quran classes for adults are private one-to-one video lessons for people who never learned to read the Quran, learned as a child and forgot, or want to correct their Tajweed. At ${site.name} you study alone with a male or female teacher, at times around work and family. The first ${t} classes are free.`,
+    answer: `Online Quran classes for adults are private 1-on-1 video lessons for people who never learned to read the Quran, learned as a child and forgot, or want to correct their Tajweed. At ${site.name} you study alone with a male or female teacher, at times around work and family. The first ${t} classes are free.`,
     facts: [
       { label: "Who it is for", value: "Beginners, returners and reverts" },
       { label: "Class length", value: `${m} minutes, private` },
@@ -400,7 +400,7 @@ export const landings: Landing[] = [
     ],
     faqs: [
       { q: "Is it too late to learn the Quran as an adult?", a: "No. Adults learn the script faster than children because they understand instructions and practise deliberately. Most adult beginners finish Noorani Qaida in 2 to 4 months." },
-      { q: "How can adults learn to read the Quran?", a: "Start with the Arabic letters and their sounds using Noorani Qaida, move on to reading short surahs with a teacher listening, then learn Tajweed rules on your own recitation. A one-to-one teacher shortens every stage because mistakes are corrected as they happen." },
+      { q: "How can adults learn to read the Quran?", a: "Start with the Arabic letters and their sounds using Noorani Qaida, move on to reading short surahs with a teacher listening, then learn Tajweed rules on your own recitation. A 1-on-1 teacher shortens every stage because mistakes are corrected as they happen." },
       { q: "I am a revert and do not know any Arabic. Can I join?", a: "Yes. You start from the first letter, in English, and the teacher can include how to pray and the surahs you need for salah." },
       { q: "Can I learn with a female teacher?", a: "Yes. Sisters can request a female teacher for every class." },
       { q: "How many classes a week should an adult take?", a: "Two or three. Consistency matters more than volume: two classes a week with daily ten-minute practice beats five classes with none." },
@@ -414,7 +414,7 @@ export const landings: Landing[] = [
     h1: "Female Quran teacher online for sisters and children",
     metaTitle: "Female Quran Teacher Online for Sisters and Kids",
     metaDescription: `Learn Quran online with a female teacher. Private classes for sisters, girls and young children in Qaida, Tajweed, Hifz and Tafseer. ${t} free trial classes.`,
-    answer: `${site.name} has female Quran teachers who teach sisters, girls and young children in private one-to-one video classes. They teach Noorani Qaida, Quran reading, Tajweed, Hifz and Tafseer in English or Urdu. Request a female teacher on the trial form and your ${t} free trial classes will be with her.`,
+    answer: `${site.name} has female Quran teachers who teach sisters, girls and young children in private 1-on-1 video classes. They teach Noorani Qaida, Quran reading, Tajweed, Hifz and Tafseer in English or Urdu. Request a female teacher on the trial form and your ${t} free trial classes will be with her.`,
     facts: [
       { label: "For", value: "Sisters, girls and young children" },
       { label: "Class type", value: `Private, ${m} minutes` },
@@ -441,7 +441,7 @@ export const landings: Landing[] = [
         "[Ijazah](/courses/quran-ijazah-course) with a female teacher who holds an Ijazah",
       ] },
       { type: "h2", text: "Privacy in class" },
-      { type: "p", text: "Classes are one-to-one, so no one else is on the call. Sisters may keep their own camera off if they wish, since the teacher needs to hear the recitation and share the page, not see the student. Classes are not recorded unless you ask for a recording." },
+      { type: "p", text: "Classes are 1-on-1, so no one else is on the call. Sisters may keep their own camera off if they wish, since the teacher needs to hear the recitation and share the page, not see the student. Classes are not recorded unless you ask for a recording." },
       { type: "h2", text: "Class times for sisters" },
       { type: "p", text: "Daytime slots during school hours are the most requested by mothers. Evening and weekend slots are available for working sisters and students. You choose the days and times on the trial form, in your own time zone." },
       { type: "h2", text: "Fees" },
@@ -463,7 +463,7 @@ export const landings: Landing[] = [
     h1: "Group Quran classes online for siblings, families and communities",
     metaTitle: "Group Quran Classes Online for Siblings and Families",
     metaDescription: `Online group Quran classes for siblings, families and friends: 2 to 6 learners at one level, from ${money("USD", lowestGroup("USD"))} per learner a month. ${t} free trial classes.`,
-    answer: `Group Quran classes are live online lessons where two to six learners at the same level share one teacher. ${site.name} runs family groups for siblings and relatives, and community groups for children from the same neighbourhood, mosque or school. Classes are ${groupClass.minutes} minutes, cost less per learner than one-to-one, and the first ${t} are free.`,
+    answer: `Group Quran classes are live online lessons where two to six learners at the same level share one teacher. ${site.name} runs family groups for siblings and relatives, and community groups for children from the same neighbourhood, mosque or school. Classes are ${groupClass.minutes} minutes, cost less per learner than 1-on-1, and the first ${t} are free.`,
     facts: [
       { label: "Group size", value: "2 to 4 in a family group, 3 to 6 in a community group" },
       { label: "Class length", value: `${groupClass.minutes} minutes, live with one teacher` },
@@ -479,10 +479,10 @@ export const landings: Landing[] = [
         rows: groupTiers.map((g) => [g.name, g.who, `${g.min} to ${g.max} learners`, currencies.map((c) => money(c.code, g.plans[1].prices[c.code])).join(" / ")]),
       },
       { type: "p", text: "In a family group one parent manages everything from a single dashboard. In a community group one organiser registers the learners, and each child still has their own attendance record, lesson notes and quiz results." },
-      { type: "h2", text: "Group or one-to-one: which is better?" },
+      { type: "h2", text: "Group or 1-on-1: which is better?" },
       {
         type: "table",
-        head: ["", "One-to-one", "Small group"],
+        head: ["", "1-on-1", "Small group"],
         rows: [
           ["Reading time for each learner", `Almost the whole ${m} minutes`, `A turn of several minutes in a ${groupClass.minutes}-minute class`],
           ["Pace", "Set by one student", "Set for the group, so levels must match"],
@@ -491,7 +491,7 @@ export const landings: Landing[] = [
           ["Best for", "Hifz, Ijazah, fixing individual mistakes, very young children", "Qaida beginners starting together, Tajweed rules, Islamic studies, Tafseer"],
         ],
       },
-      { type: "p", text: "We will tell you honestly which suits your children after the free level check. Hifz and Ijazah are taught one-to-one only." },
+      { type: "p", text: "We will tell you honestly which suits your children after the free level check. Hifz and Ijazah are taught 1-on-1 only." },
       { type: "h2", text: "Courses that work well in a group" },
       { type: "ul", items: [
         "[Noorani Qaida](/courses/noorani-qaida-online), when the learners start from the same lesson",
@@ -522,13 +522,13 @@ export const landings: Landing[] = [
         head: ["Plan", ...currencies.map((c) => c.country)],
         rows: g.plans.map((p) => [p.name, ...currencies.map((c) => money(c.code, p.prices[c.code]))]),
       })),
-      { type: "p", text: `There is no registration fee. Compare with one-to-one classes on the [fees page](/pricing).` },
+      { type: "p", text: `There is no registration fee. Compare with 1-on-1 classes on the [fees page](/pricing).` },
     ],
     faqs: [
       { q: "How many students are in a group Quran class?", a: "Two to four learners in a family group and three to six in a community group. We do not run larger classes, because each learner needs time to read to the teacher." },
       { q: "How much do group Quran classes cost?", a: `Family group classes cost ${money("USD", groupTiers[0].plans[0].prices.USD)} to ${money("USD", groupTiers[0].plans[2].prices.USD)} per learner a month, and community group classes cost ${money("USD", groupTiers[1].plans[0].prices.USD)} to ${money("USD", groupTiers[1].plans[2].prices.USD)}, for 2 to 5 classes a week of ${groupClass.minutes} minutes. Fees in pounds, Australian and Canadian dollars are in the tables on this page.` },
-      { q: "Are group Quran classes as effective as one-to-one?", a: "For learning rules, duas, Islamic studies and for beginners who start together, a small group works well and children enjoy it. For correcting individual reading, and for Hifz, one-to-one is faster because the student reads for the whole class." },
-      { q: "What if the children are at different levels?", a: "The teacher checks each learner first. If the levels are close, they share a group. If they are far apart, we suggest two smaller groups or one-to-one classes, so that nobody is bored or left behind." },
+      { q: "Are group Quran classes as effective as 1-on-1?", a: "For learning rules, duas, Islamic studies and for beginners who start together, a small group works well and children enjoy it. For correcting individual reading, and for Hifz, 1-on-1 is faster because the student reads for the whole class." },
+      { q: "What if the children are at different levels?", a: "The teacher checks each learner first. If the levels are close, they share a group. If they are far apart, we suggest two smaller groups or 1-on-1 classes, so that nobody is bored or left behind." },
       { q: "Can adults take group classes?", a: "Yes. Couples, a parent with a teenager, and sisters' study circles with a female teacher are all common. Tafseer and Quranic Arabic suit adult groups especially well." },
       { q: "Can we add or remove a learner later?", a: "Yes, at the start of any month, as long as the new learner is at the group's level and the group stays within its size." },
     ],

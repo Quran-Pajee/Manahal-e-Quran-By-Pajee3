@@ -19,7 +19,7 @@ function guess(): Currency | null {
 
 type Kind = "one" | GroupKind;
 
-/** Fee table with a currency switch and a class-type switch (one-to-one, family group, community group). */
+/** Fee table with a currency switch and a class-type switch (1-on-1, family group, community group). */
 export function PricingTable({ lang, fixed, minutes, initial = "one", kinds = ["one", "family", "community"] }: { lang: Lang; fixed?: Currency; minutes: number; initial?: Kind; kinds?: Kind[] }) {
   const t = ui[lang];
   const [cur, setCur] = useState<Currency>(fixed ?? "USD");
@@ -84,7 +84,7 @@ export function PricingTable({ lang, fixed, minutes, initial = "one", kinds = ["
         ))}
       </ul>
       <div className="mt-5 space-y-2 text-sm text-muted">
-        <p><strong className="text-emerald">20% Sibling Discount for 2nd Child</strong> on one-to-one plans.</p>
+        <p><strong className="text-emerald">20% Sibling Discount for 2nd Child</strong> on 1-on-1 plans.</p>
         <p><strong className="text-emerald">Payment options:</strong> Stripe (Cards), PayPal, Wise, Zelle, Interac.</p>
       </div>
     </div>

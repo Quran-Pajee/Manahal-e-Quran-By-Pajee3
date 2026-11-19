@@ -157,7 +157,7 @@ export function PublicPageEditor({ path, lang, saved, msg, isAdmin }: { path: st
           </div>
           <div>
             <label htmlFor="public-cta-text" className="label">Primary CTA label</label>
-            <input id="public-cta-text" name="ctaText" className="field" maxLength={120} dir={lang === "en" ? "ltr" : "rtl"} defaultValue={str(cta.label)} placeholder="Book free trial" />
+            <input id="public-cta-text" name="ctaText" className="field" maxLength={120} dir={lang === "en" ? "ltr" : "rtl"} defaultValue={str(cta.label)} placeholder="Book 3 Free Trial Classes" />
           </div>
           <div className="md:col-span-2">
             <label htmlFor="public-cta-href" className="label">Primary CTA destination</label>
@@ -178,8 +178,8 @@ export function PublicPageEditor({ path, lang, saved, msg, isAdmin }: { path: st
         {isPricing && (
           <div className="rounded-lg border border-line bg-wash p-4">
             <p className="font-semibold">Monthly pricing for USD, GBP, CAD, AUD</p>
-            <p className="mt-1 text-sm text-muted">Use the editable rate table in Billing to save all one-to-one and group rates to Neon. Current code-defined plan totals remain in place on public pages until the public pricing renderer is upgraded.</p>
-            <p className="mt-2 text-sm text-muted">Configured plans: {plans.length} one-to-one and {groupTiers.reduce((n, g) => n + g.plans.length, 0)} group-frequency plans.</p>
+            <p className="mt-1 text-sm text-muted">Use the editable rate table in Billing to save all 1-on-1 and group rates to Neon. Current code-defined plan totals remain in place on public pages until the public pricing renderer is upgraded.</p>
+            <p className="mt-2 text-sm text-muted">Configured plans: {plans.length} 1-on-1 and {groupTiers.reduce((n, g) => n + g.plans.length, 0)} group-frequency plans.</p>
             {isAdmin && <Link className="link mt-2 inline-block font-semibold" href="/admin/billing#pricing-rates">Edit pricing rates</Link>}
           </div>
         )}

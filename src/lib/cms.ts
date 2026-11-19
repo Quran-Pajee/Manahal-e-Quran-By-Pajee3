@@ -230,9 +230,9 @@ export async function pageOverride(path: string, lang: CmsLang = "en"): Promise<
 }
 
 /** Pages opt into overrides by calling this with their existing static content object. */
-export async function resolvePageContent<T extends PageContent>(path: string, lang: CmsLang, defaults: T): Promise<T> {
+export async function resolvePageContent<T extends PageContent>(path: string, lang: CmsLang, defaults: T): Promise<T & PageContent> {
   const override = await pageOverride(path, lang);
-  return override ? { ...defaults, ...override.content } as T : defaults;
+  return override ? { ...defaults, ...override.content } as T & PageContent : defaults;
 }
 
 /** Admin-only caller: save a draft/published override, then invalidate every public route. */

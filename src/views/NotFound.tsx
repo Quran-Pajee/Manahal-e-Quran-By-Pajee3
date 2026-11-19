@@ -17,7 +17,7 @@ export default function NotFound() {
             Courses
           </Link>
           <Link href="/free-trial" className="btn btn-primary">
-            Book free trial
+            Book 3 Free Trial Classes
           </Link>
         </div>
       </div>

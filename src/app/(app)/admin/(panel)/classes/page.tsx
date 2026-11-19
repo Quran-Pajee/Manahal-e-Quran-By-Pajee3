@@ -8,7 +8,7 @@ import { ClassFields } from "./ClassFields";
 
 export const metadata = { title: "Classes" };
 
-const KIND: Record<string, string> = { one: "One-to-one", family: "Family group", community: "Community group" };
+const KIND: Record<string, string> = { one: "1-on-1", family: "Family group", community: "Community group" };
 
 export default async function ClassesPage({ searchParams }: { searchParams: Promise<{ msg?: string; learner?: string }> }) {
   await requireAdmin();

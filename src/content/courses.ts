@@ -37,7 +37,7 @@ export const courses: Course[] = [
     h1: "Noorani Qaida online course for kids and adult beginners",
     metaTitle: "Noorani Qaida Online Course for Kids and Beginners",
     metaDescription:
-      "Learn Noorani Qaida online, one-to-one: Arabic letters, harakat, joining and first Tajweed rules, for children from age 4 and adults. 3 free trial classes.",
+      "Learn Noorani Qaida online, 1-on-1: Arabic letters, harakat, joining and first Tajweed rules, for children from age 4 and adults. 3 free trial classes.",
     answer:
       "Noorani Qaida is the beginner's book that teaches you to read Arabic script before you open the Quran. In this course a teacher takes one student through the letters, their sounds, the vowel marks and how letters join, in live 30-minute classes. Most children finish in 4 to 8 months.",
     step: 1,
@@ -79,10 +79,10 @@ export const courses: Course[] = [
   {
     slug: "quran-reading-course",
     name: "Quran Reading",
-    h1: "Online Quran reading course (Nazra) with a one-to-one teacher",
+    h1: "Online Quran reading course (Nazra) with a 1-on-1 teacher",
     metaTitle: "Online Quran Reading Course (Nazra) for Kids and Adults",
     metaDescription:
-      "Learn to read the Quran fluently from the mushaf with a one-to-one teacher. Daily sabaq, revision and applied Tajweed. 3 free trial classes.",
+      "Learn to read the Quran fluently from the mushaf with a 1-on-1 teacher. Daily sabaq, revision and applied Tajweed. 3 free trial classes.",
     answer:
       "The Quran reading course, called Nazra in South Asia, takes a student who can read Arabic script and builds fluent, correct reading of the whole Quran from the mushaf. The teacher listens to a new portion and a revision portion in every 30-minute class and corrects each mistake as it happens.",
     step: 2,
@@ -125,9 +125,9 @@ export const courses: Course[] = [
     h1: "Online Tajweed classes: learn to recite the Quran correctly",
     metaTitle: "Online Tajweed Classes for Kids, Adults and Sisters",
     metaDescription:
-      "One-to-one online Tajweed classes: makharij, noon and meem rules, madd, qalqalah and waqf, applied to your own recitation. 3 free trial classes.",
+      "1-on-1 online Tajweed classes: makharij, noon and meem rules, madd, qalqalah and waqf, applied to your own recitation. 3 free trial classes.",
     answer:
-      "Tajweed is the set of rules for pronouncing each letter of the Quran from its correct point of articulation, with its correct qualities and length. In this course a teacher listens to your recitation one-to-one, teaches each rule and trains you to apply it. Most students cover the rules in 4 to 8 months.",
+      "Tajweed is the set of rules for pronouncing each letter of the Quran from its correct point of articulation, with its correct qualities and length. In this course a teacher listens to your recitation 1-on-1, teaches each rule and trains you to apply it. Most students cover the rules in 4 to 8 months.",
     step: 3,
     summary: "The rules of correct recitation, taught on your own reading until they become habit.",
     ages: "7 and up",
@@ -157,7 +157,7 @@ export const courses: Course[] = [
       "Sisters can choose a female teacher for the whole course.",
     ],
     faqs: [
-      { q: "Can I learn Tajweed online?", a: "Yes. Tajweed is learned by reciting to a teacher who hears and corrects you, and a live video class does exactly that. One-to-one classes give more correction time than a group class at a mosque." },
+      { q: "Can I learn Tajweed online?", a: "Yes. Tajweed is learned by reciting to a teacher who hears and corrects you, and a live video class does exactly that. 1-on-1 classes give more correction time than a group class at a mosque." },
       { q: "How long does it take to learn Tajweed?", a: "Most students cover the main rules in 4 to 8 months at 2 or 3 classes a week. Applying them without thinking takes longer and comes from daily recitation." },
       { q: "Is Tajweed obligatory?", a: "Scholars agree that reciting the Quran without changing its letters or meanings is required of every Muslim who is able to learn. Knowing the names of the rules is a communal duty. For a ruling on your own situation, ask a scholar you trust." },
       { q: "Do you teach Tajweed in English?", a: `Yes. Classes are taught in ${site.teachingLanguages.join(", ").replace(/, ([^,]*)$/, " or $1")}, and rule names are given in Arabic with a plain explanation.` },
@@ -167,7 +167,7 @@ export const courses: Course[] = [
   {
     slug: "online-hifz-classes",
     name: "Hifz (Memorization)",
-    h1: "Online Hifz classes: memorize the Quran with a one-to-one teacher",
+    h1: "Online Hifz classes: memorize the Quran with a 1-on-1 teacher",
     metaTitle: "Online Hifz Classes: Quran Memorization for Kids and Adults",
     metaDescription:
       "Online Hifz classes with a personal teacher: daily sabaq, sabqi and manzil, a written plan and monthly tests. 3 free trial classes.",
@@ -254,9 +254,9 @@ export const courses: Course[] = [
     h1: "Online Quran translation and Tafseer course in English",
     metaTitle: "Online Quran Tafseer and Translation Course in English",
     metaDescription:
-      "Quran Tafseer course online, one-to-one: word-by-word translation and Tafseer in English or Urdu, surah by surah, for teens and adults. 3 free trial classes.",
+      "Quran Tafseer course online, 1-on-1: word-by-word translation and Tafseer in English or Urdu, surah by surah, for teens and adults. 3 free trial classes.",
     answer:
-      "Tafseer is the explanation of the meanings of the Quran. This course goes through the Quran surah by surah: word-by-word translation first, then the explanation of each passage, why it was revealed and what it asks of us. Classes are one-to-one in English or Urdu, for teens and adults.",
+      "Tafseer is the explanation of the meanings of the Quran. This course goes through the Quran surah by surah: word-by-word translation first, then the explanation of each passage, why it was revealed and what it asks of us. Classes are 1-on-1 in English or Urdu, for teens and adults.",
     step: null,
     summary: "Understand what you recite: word-by-word translation, then the explanation of each passage.",
     ages: "12 and up",
@@ -294,7 +294,7 @@ export const courses: Course[] = [
     h1: "Online Quranic Arabic course: understand the Quran in its own language",
     metaTitle: "Online Quranic Arabic Course for Beginners",
     metaDescription:
-      "Quranic Arabic course online, one-to-one: high-frequency vocabulary, grammar (nahw) and word patterns (sarf), practised on real ayahs. 3 free trial classes.",
+      "Quranic Arabic course online, 1-on-1: high-frequency vocabulary, grammar (nahw) and word patterns (sarf), practised on real ayahs. 3 free trial classes.",
     answer:
       "Quranic Arabic is the classical Arabic of the Quran. This course teaches the vocabulary and grammar you need to understand ayahs directly, without relying on a translation. It starts with the most frequent Quranic words and builds grammar step by step, practising every point on verses you already know.",
     step: null,

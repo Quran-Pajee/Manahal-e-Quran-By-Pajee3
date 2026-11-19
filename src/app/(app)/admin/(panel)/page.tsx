@@ -160,7 +160,7 @@ export default async function Overview() {
         <BarList title="Where leads come from" total={leads.length} rows={tally(leads, leadChannel)} />
         <BarList title="Country" total={leads.length} rows={tally(leads, (l) => l.country)} href={(label) => `/admin/leads?country=${encodeURIComponent(label)}`} />
         <BarList title="Course" total={leads.length} rows={tally(leads, (l) => l.course)} />
-        <BarList title="Class type" total={leads.length} rows={tally(leads, (l) => l.classType || "One-to-one")} />
+        <BarList title="Class type" total={leads.length} rows={tally(leads, (l) => l.classType || "1-on-1")} />
         <BarList title="Campaign (utm_campaign)" total={leads.length} rows={tally(leads.filter((l) => l.utmCampaign), (l) => l.utmCampaign)} />
         <BarList title="Page the form was sent from" total={leads.length} rows={tally(leads, (l) => l.sourcePage)} />
       </div>

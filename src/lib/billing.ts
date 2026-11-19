@@ -38,12 +38,12 @@ export type Invoice = {
 };
 export type AdminInvoice = Invoice & { accountName: string; accountEmail: string; accountPhone: string };
 
-/** A one-to-one plan for each child, in birth/enrolment order. Group fees are per learner. */
+/** A 1-on-1 plan for each child, in birth/enrolment order. Group fees are per learner. */
 export type HouseholdPlan = { planId: string; kind?: "one" | GroupKind };
 export type HouseholdQuote = { currency: Currency; subtotal: number; siblingDiscount: number; total: number; lines: { planId: string; kind: "one" | GroupKind; base: number; discount: number; due: number }[] };
 
 /**
- * The second one-to-one child gets 20% off their own plan, with no stacking onto
+ * The second 1-on-1 child gets 20% off their own plan, with no stacking onto
  * already discounted group rates. No discount applies to the third or later child.
  * Quote first; an admin can choose to persist the result as the family's monthly fee.
  */

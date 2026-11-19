@@ -34,10 +34,10 @@ export const posts: Post[] = [
     updated: "2026-10-08",
     minutes: 5,
     answer:
-      "In 2026, one-to-one online Quran classes typically cost between $30 and $110 a month in the USA, depending on how many classes you take a week, how long each class is and where the academy's teachers are based. That works out at roughly $6 to $25 an hour. Group classes cost less.",
+      "In 2026, 1-on-1 online Quran classes typically cost between $30 and $110 a month in the USA, depending on how many classes you take a week, how long each class is and where the academy's teachers are based. That works out at roughly $6 to $25 an hour. Group classes cost less.",
     blocks: [
       { type: "h2", text: "Typical price ranges" },
-      { type: "p", text: "These ranges come from the published fee pages of online Quran academies serving English-speaking countries, reviewed in October 2026. They are for private one-to-one classes. Many academies publish only US-dollar prices, so the UK and Australian columns include converted figures." },
+      { type: "p", text: "These ranges come from the published fee pages of online Quran academies serving English-speaking countries, reviewed in October 2026. They are for private 1-on-1 classes. Many academies publish only US-dollar prices, so the UK and Australian columns include converted figures." },
       {
         type: "table",
         head: ["Classes a week (30 minutes)", "USA", "UK", "Australia"],
@@ -63,7 +63,7 @@ export const posts: Post[] = [
       {
         type: "ol",
         items: [
-          "Convert each quote to a price per hour of one-to-one teaching.",
+          "Convert each quote to a price per hour of 1-on-1 teaching.",
           "Check that the fee is for a private class, not a small group.",
           "Ask whether the same teacher takes every class.",
           "Ask what happens to missed classes.",
@@ -76,13 +76,13 @@ export const posts: Post[] = [
         head: ["Plan", "USA", "UK", "Australia", "Canada"],
         rows: plans.map((p) => [p.name, money("USD", p.prices.USD), money("GBP", p.prices.GBP), money("AUD", p.prices.AUD), money("CAD", p.prices.CAD)]),
       },
-      { type: "p", text: `Every plan is one-to-one, ${site.classMinutes} minutes a class, with no registration fee. The first ${t} classes are free. Full details are on the [fees page](/pricing).` },
+      { type: "p", text: `Every plan is 1-on-1, ${site.classMinutes} minutes a class, with no registration fee. The first ${t} classes are free. Full details are on the [fees page](/pricing).` },
       { type: "h2", text: "Is the cheapest option the best?" },
       { type: "p", text: "Not always. A low fee is good value only if the teacher is qualified, turns up on time and stays with the student for months. A child who changes teacher every few weeks loses more in progress than the family saves in fees. Use the trial classes to judge the teacher, then look at the price." },
     ],
     faqs: [
-      { q: "How much is a Quran teacher per hour online?", a: "Most online academies work out at about $6 to $25 an hour for one-to-one teaching in 2026. Independent tutors based in the USA, UK or Australia often charge $20 to $40 an hour." },
-      { q: "Are there free online Quran classes?", a: `Some mosques and charities run free group classes, and most academies offer free trial classes. ${site.name} gives ${t} free one-to-one trial classes before any fee is due.` },
+      { q: "How much is a Quran teacher per hour online?", a: "Most online academies work out at about $6 to $25 an hour for 1-on-1 teaching in 2026. Independent tutors based in the USA, UK or Australia often charge $20 to $40 an hour." },
+      { q: "Are there free online Quran classes?", a: `Some mosques and charities run free group classes, and most academies offer free trial classes. ${site.name} gives ${t} free 1-on-1 trial classes before any fee is due.` },
       { q: "Why are some online Quran classes so cheap?", a: "Mainly because of where the teachers live. A fair wage in Egypt or Pakistan is lower than in the USA or UK, so academies based there can charge less for the same teaching time." },
     ],
     related: ["/pricing", "/free-trial", "/blog/how-to-choose-online-quran-teacher"],
@@ -175,7 +175,7 @@ export const posts: Post[] = [
         head: ["Age", "What suits them", "Realistic goal for the first year"],
         rows: [
           ["3 to 4", "Listening, short surahs by ear, letter songs and games", "A few short surahs memorized by listening"],
-          ["4 to 6", "Noorani Qaida in short one-to-one classes", "Finish most or all of the Qaida"],
+          ["4 to 6", "Noorani Qaida in short 1-on-1 classes", "Finish most or all of the Qaida"],
           ["7 to 9", "Qaida at a faster pace, then Quran reading", "Qaida complete and Juz Amma under way"],
           ["10 to 13", "Reading with Tajweed, or Hifz for fluent readers", "Fluent reading, several juz read"],
           ["Teens", "Tajweed, Hifz, Tafseer", "Set with the teacher"],
@@ -199,7 +199,7 @@ export const posts: Post[] = [
     faqs: [
       { q: "Can a 3-year-old start Quran classes?", a: "A few can, but most are not ready for a structured class. At 3, listening to recitation and repeating short surahs with a parent works better than formal lessons." },
       { q: "At what age can a child start Hifz?", a: "Once they read the Quran fluently with correct Tajweed, which for most children is between 7 and 10. Starting memorization before the reading is sound means memorizing mistakes." },
-      { q: "How long should a Quran class be for a 5-year-old?", a: "Twenty to thirty minutes, one-to-one, with several changes of activity." },
+      { q: "How long should a Quran class be for a 5-year-old?", a: "Twenty to thirty minutes, 1-on-1, with several changes of activity." },
     ],
     related: ["/online-quran-classes-for-kids", "/courses/noorani-qaida-online", "/blog/what-is-noorani-qaida"],
   },
@@ -319,7 +319,7 @@ export const posts: Post[] = [
     updated: "2026-10-08",
     minutes: 5,
     answer:
-      "Choose an online Quran teacher by checking nine things: their own recitation, their qualification, their English, their experience with your age group, whether classes are truly one-to-one, whether the teacher stays the same, how progress is reported, the trial and cancellation terms, and the real price per hour.",
+      "Choose an online Quran teacher by checking nine things: their own recitation, their qualification, their English, their experience with your age group, whether classes are truly 1-on-1, whether the teacher stays the same, how progress is reported, the trial and cancellation terms, and the real price per hour.",
     blocks: [
       { type: "h2", text: "The checklist" },
       {
@@ -329,7 +329,7 @@ export const posts: Post[] = [
           "Qualification. For reading and Tajweed, formal Quran study. For Hifz, a hafiz. For Ijazah, a teacher who holds one with a sanad.",
           "Language. The teacher must be able to explain a mistake in words your child understands.",
           "Experience with the age group. Teaching a five-year-old and teaching an adult are different skills.",
-          "One-to-one. Confirm that the fee is for a private class and not a shared one.",
+          "1-on-1. Confirm that the fee is for a private class and not a shared one.",
           "Same teacher every time. Progress stalls when teachers rotate.",
           "Progress reports. Ask how often you will hear from the teacher and what the report contains.",
           "Trial and cancellation. A real free trial, no card required, and the freedom to stop at the end of a month.",
@@ -364,7 +364,7 @@ export const posts: Post[] = [
       { type: "p", text: `Reading about a teacher tells you little. One class tells you a lot. ${site.name} gives ${t} [free trial classes](/free-trial) so you can run through this checklist yourself. Fees start at ${money("USD", lowest("USD"))} a month and go up to ${money("USD", highest("USD"))} for five classes a week.` },
     ],
     faqs: [
-      { q: "Is an online Quran teacher as good as a local one?", a: "A good teacher is good in either setting. Online one-to-one classes often give a student more reading and correction time than a local group class, while a local class offers community and the mosque environment." },
+      { q: "Is an online Quran teacher as good as a local one?", a: "A good teacher is good in either setting. Online 1-on-1 classes often give a student more reading and correction time than a local group class, while a local class offers community and the mosque environment." },
       { q: "Should I pick an Arab or non-Arab Quran teacher?", a: "Pick on recitation, qualification and teaching skill, not nationality. Excellent Tajweed teachers come from Egypt, Pakistan, Syria, Indonesia and many other countries." },
       { q: "How do I know if a Quran teacher is qualified?", a: "Ask where they studied, whether they are a hafiz and whether they hold an Ijazah. Then listen to them recite and watch how they correct a student in the trial class." },
     ],

@@ -22,7 +22,7 @@ export async function GET() {
     `> ${site.description}`,
     "",
     "## Key facts",
-    `- Class format: live online classes on ${site.classApps}. One-to-one (${site.classMinutes} minutes), or small groups (${groupClass.minutes} minutes): family groups of ${groupTiers[0].min} to ${groupTiers[0].max} learners and community groups of ${groupTiers[1].min} to ${groupTiers[1].max}`,
+    `- Class format: live online classes on ${site.classApps}. 1-on-1 (${site.classMinutes} minutes), or small groups (${groupClass.minutes} minutes): family groups of ${groupTiers[0].min} to ${groupTiers[0].max} learners and community groups of ${groupTiers[1].min} to ${groupTiers[1].max}`,
     `- Students: children from age 4, teenagers and adults, including new Muslims`,
     `- Dashboards: every student, parent and teacher has a login showing attendance, lessons, homework, quizzes and test results`,
     `- Website languages: English, Urdu (${abs("/ur")}) and Arabic (${abs("/ar")})`,
@@ -34,7 +34,7 @@ export async function GET() {
     `- Run by: ${site.organisation.name} (${site.organisation.url})`,
     `- Information last reviewed: ${site.lastUpdated}`,
     "",
-    "## Monthly fees (one student, one-to-one)",
+    "## Monthly fees (one student, 1-on-1)",
     ...plans.map((p) => `- ${p.name} (${p.classesPerMonth} classes a month): ${currencies.map((c) => `${money(c.code, p.prices[c.code])} ${c.code}`).join(", ")}`),
     "",
     ...groupTiers.flatMap((g) => [
