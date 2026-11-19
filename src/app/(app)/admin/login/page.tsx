@@ -5,6 +5,8 @@ import { setupStatus } from "@/lib/setup";
 import { login } from "../actions";
 import { Mark } from "@/components/Logo";
 import { site } from "@/content/site";
+import Link from "next/link";
+import { PasswordField } from "@/components/app/PasswordField";
 
 export default async function LoginPage({ searchParams }: { searchParams: Promise<{ error?: string; staff?: string }> }) {
   const me = await session();
@@ -42,8 +44,9 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
                 <label htmlFor="password" className="label">
                   Password
                 </label>
-                <input id="password" name="password" type="password" className="field" autoComplete="current-password" required aria-describedby={error ? "login-error" : undefined} />
+                <PasswordField id="password" name="password" className="field" autoComplete="current-password" required aria-describedby={error ? "login-error" : undefined} />
               </div>
+              <p><Link href="/forgot-password" className="link">Forgot password?</Link></p>
               {error && (
                 <p id="login-error" role="alert" className="rounded-md bg-bad/10 px-3 py-2 text-[0.95rem] text-bad">
                   {error === "locked" ? "Too many attempts. Wait 15 minutes and try again." : staff ? "That email and password do not match an active staff account." : "That password is not correct."}

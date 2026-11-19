@@ -32,7 +32,7 @@ export default async function LoginPage() {
           {t.createOne}
         </Link>
       </p>
-      <p className="mt-3 text-[0.95rem] text-muted">{t.forgot}</p>
+
     </AuthShell>
   );
 }

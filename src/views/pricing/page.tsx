@@ -16,7 +16,7 @@ import { ui } from "@/i18n/ui";
 import { PageSchema } from "@/components/PageSchema";
 
 export const revalidate = 3600;
-const cachedPricingContent = unstable_cache((lang: "en" | "ur" | "ar") => resolvePageContent("/pricing", lang, { h1: "" }), ["public-pricing-cms"], { revalidate: 3600, tags: ["cms-pricing"] });
+const cachedPricingContent = unstable_cache((lang: "en" | "ur" | "ar") => resolvePageContent("/pricing", lang, {}), ["public-pricing-cms"], { revalidate: 3600, tags: ["cms-pricing"] });
 
 type Props = { params: Promise<{ lang: string }> };
 

@@ -1,5 +1,6 @@
 import { AppShell, LangSwitch } from "./Shell";
 import { Card, Notice } from "./ui";
+import { PasswordField } from "./PasswordField";
 import type { Lang } from "@/i18n";
 import { app } from "@/i18n/app";
 import type { User } from "@/lib/users";
@@ -105,13 +106,13 @@ export function SettingsView({ lang, user, query }: { lang: Lang; user: User; qu
               <label className="label" htmlFor="current">
                 {s.current}
               </label>
-              <input className="field" id="current" name="current" type="password" dir="ltr" autoComplete="current-password" required />
+              <PasswordField className="field" id="current" name="current" dir="ltr" autoComplete="current-password" required />
             </div>
             <div>
               <label className="label" htmlFor="next">
                 {s.next}
               </label>
-              <input className="field" id="next" name="next" type="password" dir="ltr" autoComplete="new-password" required minLength={8} maxLength={200} aria-describedby="next-hint" />
+              <PasswordField className="field" id="next" name="next" dir="ltr" autoComplete="new-password" required minLength={8} maxLength={200} aria-describedby="next-hint" />
               <p id="next-hint" className="mt-1.5 text-[0.9rem] text-muted">
                 {t.auth.passwordHint}
               </p>

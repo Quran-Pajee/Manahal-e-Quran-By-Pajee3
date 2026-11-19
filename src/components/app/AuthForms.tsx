@@ -3,6 +3,8 @@
 import { useActionState, useEffect, useState } from "react";
 import { logInAction, signUpAction, type FormState } from "@/app/(app)/actions";
 import type { App } from "@/i18n/app";
+import Link from "next/link";
+import { PasswordField } from "./PasswordField";
 
 type T = App["auth"];
 type Option = { value: string; label: string };
@@ -40,8 +42,9 @@ export function LoginForm({ t }: { t: T }) {
         <label className="label" htmlFor="password">
           {t.password}
         </label>
-        <input className="field" id="password" name="password" type="password" dir="ltr" autoComplete="current-password" required />
+        <PasswordField className="field" id="password" name="password" dir="ltr" autoComplete="current-password" required />
       </div>
+      <p><Link className="link" href="/forgot-password">Forgot password?</Link></p>
       <button type="submit" className="btn btn-emerald w-full" disabled={pending}>
         {t.loginBtn}
       </button>
@@ -101,7 +104,7 @@ export function SignupForm({ t, role, courses, countries, legal }: { t: T; role:
           <label className="label" htmlFor="password">
             {t.password}
           </label>
-          <input className="field" id="password" name="password" type="password" dir="ltr" autoComplete="new-password" required minLength={8} maxLength={200} aria-invalid={e.password ? true : undefined} aria-describedby="h-password" />
+          <PasswordField className="field" id="password" name="password" dir="ltr" autoComplete="new-password" required minLength={8} maxLength={200} aria-invalid={e.password ? true : undefined} aria-describedby="h-password" />
           {e.password ? (
             <Err id="h-password" code={e.password} t={t} />
           ) : (
