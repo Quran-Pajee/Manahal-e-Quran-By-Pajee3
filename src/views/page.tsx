@@ -20,7 +20,7 @@ import { ui } from "@/i18n/ui";
 import { PageSchema } from "@/components/PageSchema";
 
 export const revalidate = 3600;
-const cachedHomeContent = unstable_cache((lang: "en" | "ur" | "ar") => resolvePageContent("/", lang, {}), ["public-home-cms"], { revalidate: 3600, tags: ["cms-home"] });
+const cachedHomeContent = unstable_cache((lang: "en" | "ur" | "ar") => resolvePageContent("/", lang, { h1: "" }), ["public-home-cms"], { revalidate: 3600, tags: ["cms-home"] });
 const cachedPosts = unstable_cache(() => publishedPosts(), ["public-home-posts"], { revalidate: 3600 });
 
 type Props = { params: Promise<{ lang: string }> };
